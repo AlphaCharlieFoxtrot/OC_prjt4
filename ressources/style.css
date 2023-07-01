@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+body{
+    width: 375px;
+    margin: auto;
+    background-color:antiquewhite;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*base*/
+
+
+/*header and footer*/
+
+/*intro*/
+
+/*restaurants*/

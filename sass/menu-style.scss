@@ -1,0 +1,253 @@
+$main-color: #f3f3f3;
+$second-color: #99e2d0;
+$third-color: #008766;
+$fourth-color: #89c8fa;
+$fifth-color: #003a68;
+$sixth-color: #9356dc;
+$seventh-color: white;
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 64.8px;
+    width: 375px;
+    height: 63px;
+    img{
+        width: 197px;
+        height: 37px;
+        margin-top: 15px;
+    }
+    a{
+        z-index: 6;
+    }
+}
+
+.background-menu{
+    object-fit: cover;
+    min-width: 375px;
+    width: 100%;
+    height: 275px;
+    position: relative;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    .menu{
+        margin-top: 260px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 375px;
+        gap: 40px;
+        .menu-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                margin-left: 17px;
+                margin-top: 32px;
+                gap: 30px;
+            h1{
+                align-self: baseline;
+            }
+            i{
+            }
+        }
+        .entrees-cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+            gap: 12px;
+            h2{
+                width: 95%;
+                text-align: left;
+                span{
+                    border-bottom: 3px solid $second-color;
+                }
+            }
+            .cards{
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                gap: 12px;
+                .card{
+                    background-color: $seventh-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    border-radius: 15.04px;
+                    height: 69px;
+                    .price{
+                        margin-bottom: 13.5px;
+                    }
+                    .plate{
+                        width: 80%;
+                        height: 69px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 5px;
+                        h4{
+                            padding: 0;
+                            size: 15.04px;
+                        }
+                        p{
+                            padding: 0;
+                            size: 15.04px;
+                        }
+                    }
+                }
+            }
+        }
+        .plats-cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+            gap: 12px;
+            h2{
+                width: 95%;
+                text-align: left;
+                span{
+                    border-bottom: 3px solid $second-color;
+                }
+            }
+            .cards{
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                gap: 12px;
+                .card{
+                    background-color: $seventh-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    border-radius: 15.04px;
+                    height: 69px;
+                    .price{
+                        margin-bottom: 13.5px;
+                    }
+                    .plate{
+                        width: 80%;
+                        height: 69px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 5px;
+                        h4{
+                            padding: 0;
+                            size: 15.04px;
+                        }
+                        p{
+                            padding: 0;
+                            size: 15.04px;
+                        }
+                    }
+                }
+            }
+        }
+        .desserts-cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+            gap: 12px;
+            h2{
+                width: 95%;
+                text-align: left;
+                span{
+                    border-bottom: 3px solid $second-color;
+                }
+            }
+            .cards{
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                gap: 12px;
+                .card{
+                    background-color: $seventh-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    border-radius: 15.04px;
+                    height: 69px;
+                    .price{
+                        margin-bottom: 13.5px;
+                    }
+                    .plate{
+                        width: 80%;
+                        height: 69px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 5px;
+                        h4{
+                            padding: 0;
+                            size: 15.04px;
+                        }
+                        p{
+                            padding: 0;
+                            size: 15.04px;
+                        }
+                    }
+                }
+            }
+        }
+        .cta{
+            width: 186px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            color: $seventh-color;
+            background: linear-gradient(#9356DC,#FF79DA);
+            margin-bottom: 40px;
+        }
+    }
+
+}
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        min-width: 375px;
+        width: 100%;
+        background-color: #242424;
+        img{
+            width: 137px;
+            margin-top: 22px;
+            margin-left: 25px;
+            filter: brightness(0) invert(1);
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            margin-left: 25px;
+            margin-bottom: 22px;
+            gap: 7px;
+            a{
+                text-decoration: none;
+                color: $seventh-color;
+            }
+    
+        }
+    }
