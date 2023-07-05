@@ -21,7 +21,11 @@
                     <h1>
                         A la française
                     </h1>
-                    <i class="fa-sharp fa-regular fa-heart"></i>
+                    <form action="" method="post">
+                        <input type="checkbox">
+                        <img src="../ressources/images-textes/images/restaurants/Status=Default.svg" alt="default" class="default">
+                        <img src="../ressources/images-textes/images/restaurants/Status=Liked.svg" alt="liked" class="liked">
+                    </form>
                 </div>
 
                 <div class="entrees-cards">
@@ -30,30 +34,45 @@
                     </h2>
                     <div class="cards">
                         <article class="card">
-                            <div class="plate">
-                                <h4>Tartare de poulpe acidulé</h4>
-                                <p>Aux zestes d'orange</p>
+                            <div id="card-content" class="card-content">
+                                <div class="plate">
+                                    <h4>Tartare de poulpe acidulé</h4>
+                                    <p>Aux zestes d'orange</p>
+                                </div>
+                                <div class="price">
+                                    <p>25€</p>
+                                </div>
                             </div>
-                            <div class="price">
-                                25€
-                            </div>
-                        </article>
-                        <article class="card">
-                            <div class="plate">
-                                <h4>Velouté de légumes d'antan</h4>
-                                <p>Carotte, panais, topinambour</p>
-                            </div>
-                            <div class="price">
-                                35€
+                            <div id="card-absolute" class="card-absolute">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </article>
                         <article class="card">
-                            <div class="plate">
-                                <h4>Soupe à l'oignon</h4>
-                                <p>Revisitée</p>
+                            <div class="card-content">
+                                <div class="plate">
+                                    <h4>Velouté de légumes d'antan</h4>
+                                    <p>Carotte, panais, topinambour</p>
+                                </div>
+                                <div class="price">
+                                    35€
+                                </div>
                             </div>
-                            <div class="price">
-                                20€
+                            <div  class="card-absolute">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="card-content">
+                                <div class="plate">
+                                    <h4>Soupe à l'oignon</h4>
+                                    <p>Revisitée</p>
+                                </div>
+                                <div class="price">
+                                    20€
+                                </div>
+                            </div>
+                            <div class="card-absolute">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </article>
                     </div>
@@ -64,11 +83,16 @@
                     </h2>
                     <div class="cards">
                         <article class="card">
-                            <div class="plate">
-                                <h4>Coquilles Saint-Jacques</h4>
-                                <p>Accompagnées d'une purée de panais</p>
+                            <div class="card-content">
+                                <div class="plate">
+                                    <h4>Coquilles Saint-Jacques</h4>
+                                    <p>Accompagnées d'une purée de panais</p>
+                                </div>
+                                <div class="price">40€</div>
                             </div>
-                            <div class="price">40€</div>
+                            <div class="card-absolute">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </article>
                         <article class="card">
                             <div class="plate">
@@ -121,8 +145,8 @@
             <footer>
                 <img src="../ressources/images-textes/images/logo/ohmyfood.png" alt="logo">
                 <div class="footer-liens">
-                    <a href="#"><i class=""></i>Proposer un restaurant</a>
-                    <a href="#"><i class=""></i>Devenir un partenaire</a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                    <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir un partenaire</a>
                     <a href="#">Mention Légale</a>
                     <a href="#">Contact</a>
                 </div>

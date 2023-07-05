@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Roboto";
 }
@@ -156,13 +157,14 @@ main .section-instructions .instructions-block article {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 23.7px;
   background-color: #f6f6f6;
   text-align: center;
   border-radius: 25px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   height: 72px;
   width: 90%;
+  position: relative;
 }
 main .section-instructions .instructions-block article .numero {
   background-color: #9356dc;
@@ -173,6 +175,13 @@ main .section-instructions .instructions-block article .numero {
   border-radius: 20px;
   width: 25px;
   height: 25px;
+  position: absolute;
+  left: -12px;
+}
+main .section-instructions .instructions-block article .instruction-content {
+  display: flex;
+  align-items: center;
+  gap: 23px;
 }
 main .section-instructions .first-instruction i {
   opacity: 0.5;
@@ -232,6 +241,12 @@ main .restaurants-cards .cards .cards_ {
 main .restaurants-cards .cards .cards_ a {
   text-decoration: none;
   color: #242424;
+}
+main .restaurants-cards .cards .cards_ a .alafrançaise .card-imgEtNew p {
+  display: none;
+}
+main .restaurants-cards .cards .cards_ a .ledélicedessens .card-imgEtNew p {
+  display: none;
 }
 main .restaurants-cards .cards .cards_ a article {
   display: flex;

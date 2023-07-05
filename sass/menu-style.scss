@@ -8,6 +8,8 @@ $seventh-color: white;
 
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -47,6 +49,10 @@ main{
     align-items: center;
     position: absolute;
     width: 100%;
+    z-index: 1;
+    @media (min-width: 1024px) {
+        width: 80%;
+    }
     .menu{
         margin-top: 260px;
         border-top-left-radius: 25px;
@@ -62,13 +68,36 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-                margin-left: 17px;
-                margin-top: 32px;
-                gap: 30px;
+            margin-left: 17px;
+            margin-top: 32px;
+            gap: 30px;
             h1{
                 align-self: baseline;
             }
-            i{
+            form{
+                position: relative;
+                .liked{
+                    opacity: 0;
+                    position: absolute;
+                    z-index: 2;
+                    left: 0;
+                }
+                input{
+                    position: absolute;
+                    z-index: 3;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                }
+                input:checked + .default + .liked{
+                    transition: 3s;
+                    opacity: 1;
+                }
+                input:not(:checked) + .default +.liked{
+                    transition: 3s;
+                    opacity: 0;
+                }
+
             }
         }
         .entrees-cards{
@@ -77,6 +106,9 @@ main{
             align-items: center;
             width: 95%;
             gap: 12px;
+            @media (min-width: 1024px) {
+                width: 60%;
+            }
             h2{
                 width: 95%;
                 text-align: left;
@@ -87,33 +119,74 @@ main{
             .cards{
                 display: flex;
                 flex-direction: column;
-                width: 95%;
+                width: 100%;
                 gap: 12px;
                 .card{
                     background-color: $seventh-color;
                     display: flex;
-                    justify-content: center;
                     align-items: end;
                     border-radius: 15.04px;
                     height: 69px;
-                    .price{
-                        margin-bottom: 13.5px;
+                    position: relative;
+                    transition: transform 2s;
+                    &:hover .card-content{
+                        width: 90%;
+                        transition: 4.5s;
                     }
-                    .plate{
-                        width: 80%;
-                        height: 69px;
+                    &:hover .card-absolute{
+                        opacity: 1;
+                        transform: translateX(-100%);
+                        width: 10%;
+                    }
+                    &:not(:hover) .card-absolute{
+                        opacity:0;
+                        transition: 2s;
+                    }
+                    &:not(:hover) .card-content{
+                        width: 100%;
+                        transition: 4.5s;
+                    }
+                    .card-content{
                         display: flex;
-                        flex-direction: column;
                         justify-content: center;
-                        gap: 5px;
-                        h4{
-                            padding: 0;
-                            size: 15.04px;
+                        align-items: end;
+                        width: 100%;
+                        .price{
+                            margin-bottom: 13.5px;
+                            display: flex;
                         }
-                        p{
-                            padding: 0;
-                            size: 15.04px;
+                        .plate{
+                            width: 90%;
+                            height: 69px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 5px;
+                            h4{
+                                padding: 0;
+                                size: 15.04px;
+                            }
+                            p{
+                                padding: 0;
+                                size: 15.04px;
+                            }
                         }
+                    }
+                    .card-absolute{
+                        opacity: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 10%;
+                        height: 69px;
+                        font-size: 1.5em;
+                        color: #FFF;
+                        background-color: #99E2D0;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        position: absolute;
+                        right:-10%;
+                        transition: transform 4s;
                     }
                 }
             }
@@ -124,6 +197,9 @@ main{
             align-items: center;
             width: 95%;
             gap: 12px;
+            @media (min-width: 1024px) {
+                width: 60%;
+            }
             h2{
                 width: 95%;
                 text-align: left;
@@ -134,7 +210,7 @@ main{
             .cards{
                 display: flex;
                 flex-direction: column;
-                width: 95%;
+                width: 100%;
                 gap: 12px;
                 .card{
                     background-color: $seventh-color;
@@ -143,24 +219,66 @@ main{
                     align-items: end;
                     border-radius: 15.04px;
                     height: 69px;
-                    .price{
-                        margin-bottom: 13.5px;
+                    position: relative;
+                    transition: transform 2s;
+                    &:hover .card-content{
+                        width: 90%;
+                        transition: 4.5s;
                     }
-                    .plate{
-                        width: 80%;
-                        height: 69px;
+                    &:hover .card-absolute{
+                        opacity: 1;
+                        transform: translateX(-100%);
+                        width: 10%;
+                    }
+                    &:not(:hover) .card-absolute{
+                        opacity:0;
+                        transition: 2s;
+                    }
+                    &:not(:hover) .card-content{
+                        width: 100%;
+                        transition: 4.5s;
+                    }
+                    .card-content{
                         display: flex;
-                        flex-direction: column;
                         justify-content: center;
-                        gap: 5px;
-                        h4{
-                            padding: 0;
-                            size: 15.04px;
+                        align-items: end;
+                        width: 100%;
+                        .price{
+                            margin-bottom: 13.5px;
+                            display: flex;
                         }
-                        p{
-                            padding: 0;
-                            size: 15.04px;
+                        .plate{
+                            width: 90%;
+                            height: 69px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 5px;
+                            h4{
+                                padding: 0;
+                                size: 15.04px;
+                            }
+                            p{
+                                padding: 0;
+                                size: 15.04px;
+                            }
                         }
+                    }
+                    .card-absolute{
+                        opacity: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 10%;
+                        height: 69px;
+                        font-size: 1.5em;
+                        color: #FFF;
+                        background-color: #99E2D0;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        position: absolute;
+                        right:-10%;
+                        transition: transform 4s;
                     }
                 }
             }
@@ -171,6 +289,9 @@ main{
             align-items: center;
             width: 95%;
             gap: 12px;
+            @media (min-width: 1024px) {
+                width: 60%;
+            }
             h2{
                 width: 95%;
                 text-align: left;
@@ -181,7 +302,7 @@ main{
             .cards{
                 display: flex;
                 flex-direction: column;
-                width: 95%;
+                width: 100%;
                 gap: 12px;
                 .card{
                     background-color: $seventh-color;
@@ -190,24 +311,66 @@ main{
                     align-items: end;
                     border-radius: 15.04px;
                     height: 69px;
-                    .price{
-                        margin-bottom: 13.5px;
+                    position: relative;
+                    transition: transform 2s;
+                    &:hover .card-content{
+                        width: 90%;
+                        transition: 4.5s;
                     }
-                    .plate{
-                        width: 80%;
-                        height: 69px;
+                    &:hover .card-absolute{
+                        opacity: 1;
+                        transform: translateX(-100%);
+                        width: 10%;
+                    }
+                    &:not(:hover) .card-absolute{
+                        opacity:0;
+                        transition: 2s;
+                    }
+                    &:not(:hover) .card-content{
+                        width: 100%;
+                        transition: 4.5s;
+                    }
+                    .card-content{
                         display: flex;
-                        flex-direction: column;
                         justify-content: center;
-                        gap: 5px;
-                        h4{
-                            padding: 0;
-                            size: 15.04px;
+                        align-items: end;
+                        width: 100%;
+                        .price{
+                            margin-bottom: 13.5px;
+                            display: flex;
                         }
-                        p{
-                            padding: 0;
-                            size: 15.04px;
+                        .plate{
+                            width: 90%;
+                            height: 69px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 5px;
+                            h4{
+                                padding: 0;
+                                size: 15.04px;
+                            }
+                            p{
+                                padding: 0;
+                                size: 15.04px;
+                            }
                         }
+                    }
+                    .card-absolute{
+                        opacity: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 10%;
+                        height: 69px;
+                        font-size: 1.5em;
+                        color: #FFF;
+                        background-color: #99E2D0;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        position: absolute;
+                        right:-10%;
+                        transition: transform 4s;
                     }
                 }
             }
@@ -224,30 +387,52 @@ main{
     }
 
 }
-    footer{
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 375px;
+    width: 100%;
+    background-color: #242424;
+    @media (min-width: 1024px) {
+        min-width: 125%;
         display: flex;
-        flex-direction: column;
-        gap: 15px;
-        min-width: 375px;
-        width: 100%;
-        background-color: #242424;
-        img{
-            width: 137px;
-            margin-top: 22px;
-            margin-left: 25px;
-            filter: brightness(0) invert(1);
-        }
-        div{
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            margin-left: 25px;
-            margin-bottom: 22px;
-            gap: 7px;
-            a{
-                text-decoration: none;
-                color: $seventh-color;
-            }
-    
+        flex-direction: row-reverse;
+        justify-content: right;
+        align-items: center;
+        gap:10px;
+        height: 114px;
+    } 
+    img{
+        width: 137px;
+        margin-top: 22px;
+        margin-left: 25px;
+        filter: brightness(0) invert(1);
+        @media (min-width: 1024px) {
+            width: 11%;
+            height: 27px;
+            padding-right: 25px;
         }
     }
+    .footer-liens{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 25px;
+        margin-bottom: 22px;
+        gap: 7px;
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            margin-bottom: 0;
+            margin-top: 30px;
+            gap: 7px;
+        }
+        a{
+            text-decoration: none;
+            color: $seventh-color;
+        }
+
+    }
+}

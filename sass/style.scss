@@ -147,13 +147,14 @@ main{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 15px;
+                gap: 23.7px;
                 background-color: #f6f6f6;
                 text-align: center;
                 border-radius: 25px;
                 box-shadow: 0px 4px 15px 0px #00000026;
                 height: 72px;
                 width: 90%;
+                position: relative;
                 .numero{
                     background-color: $sixth-color;
                     display: flex;
@@ -163,6 +164,13 @@ main{
                     border-radius: 20px;
                     width: 25px;
                     height: 25px;
+                    position: absolute;
+                    left: -12px;
+                }
+                .instruction-content{
+                    display: flex;
+                    align-items: center;
+                    gap: 23px;
                 }
             }
         }
@@ -218,6 +226,20 @@ main{
                 a{
                     text-decoration: none;
                     color: #242424;
+                    .alafrançaise{
+                        .card-imgEtNew{
+                            p{
+                                display: none;
+                            }
+                        }
+                    }
+                    .ledélicedessens{
+                        .card-imgEtNew{
+                            p{
+                                display: none;
+                            }
+                        }
+                    }
                     article{
                         display: flex;
                         flex-direction: column;

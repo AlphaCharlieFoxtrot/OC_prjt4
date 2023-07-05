@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+
+
+.slideRight {
+  width: 100%;
+  overflow: hidden;
+  background-color: #99E2D0;
+}
+
+.slideRight h2 {
+  text-align: center;
+  animation: slideRight ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode:both;
+  animation-delay: 0.1ms;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
+
+
+.font-awesome{
+  position: relative;
+}
+.fa-heart{
+  font-size: 24px;
+  font-weight: 900;
+}
+.fa-solid.fa-heart{
+  position: absolute;
+  left:0;
+  opacity: 0;
+}
+.font-awesome:hover .fa-solid.fa-heart{
+opacity: 1;
+transition: 2s;
+}
+.font-awesome:not(:hover) .fa-solid.fa-heart{
+  opacity: 0;
+  transition: 2s;
+  }
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-radius: 15px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
+    padding: 5px;
+    height: 69px;
+    position: relative;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-absolute{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 69px;
+    font-size: 1.5em;
+    color: #FFF;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    right:-10%;
+    transition: transform 4s;
+}
+.card:hover .card-content{
+  width: 90%;
+}
+.card:hover .card-absolute{
+  opacity: 1;
+  transform: translateX(-100%);
+  width: 10%;
+}
+.card:not(:hover) .card-absolute{
+  opacity:0;
+  transition: 6s;
+}
+.card:not(:hover) .card-content{
+  width: 100%;
+  transition: 4500ms;
+}
+
+
+form{
+  position: relative;
+}
+form .liked{
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+}
+input{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+ form input:checked + .default + .liked{
+transition: 3s;
+opacity: 1;
+}
+form input:not(:checked) + .default +.liked{
+  transition: 3s;
+  opacity: 0;
+}
+/* form input:checked + .default{
+opacity: 0;
+}*/
+
+/*
+toogle pure css
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}*/
+
+/* Rounded sliders 
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}*/
+
+
+/*toggle icon switch
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      content:"\f186";
+      position:absolute;
+      top:-2px;
+      left:-2px;
+      width:38px;height:38px;
+      background-color:#ccc;
+      -webkit-transition:.4s;
+      transition:.4s
+}
+  
+input:checked + .slider:before {
+    content:"\f185";
+    left:20px;
+
+}*/
