@@ -103,10 +103,11 @@ main .section-intro .cta {
   border: none;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
-  transition: transform 400ms;
+  transition: 2s;
 }
 main .section-intro .cta:hover {
   transform: scale(1.15);
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(103, 0, 126, 0.7);
 }
 @media (min-width: 1024px) {
   main .section-intro .cta {
@@ -289,6 +290,35 @@ main .restaurants-cards .cards .cards_ a article .card-imgEtNew p {
 }
 main .restaurants-cards .cards .cards_ a article .card-content {
   margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .restaurants-cards .cards .cards_ a article .card-content form {
+  position: relative;
+  width: 10%;
+}
+main .restaurants-cards .cards .cards_ a article .card-content form .liked {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+}
+main .restaurants-cards .cards .cards_ a article .card-content form input {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+main .restaurants-cards .cards .cards_ a article .card-content form input:checked + .default + .liked {
+  transition: 3s;
+  opacity: 1;
+}
+main .restaurants-cards .cards .cards_ a article .card-content form input:not(:checked) + .default + .liked {
+  transition: 3s;
+  opacity: 0;
 }
 
 footer {

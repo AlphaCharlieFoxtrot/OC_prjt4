@@ -182,7 +182,7 @@ main .menu .entrees-cards .cards .card .card-absolute {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 0;
-  transition: 2s;
+  transition: 1s;
 }
 main .menu .entrees-cards .cards .card .card-absolute .fa-circle-check {
   color: white;
@@ -272,7 +272,7 @@ main .menu .plats-cards .cards .card .card-absolute {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 0;
-  transition: transform 2s;
+  transition: 1s;
 }
 main .menu .plats-cards .cards .card .card-absolute .fa-circle-check {
   color: white;
@@ -362,7 +362,7 @@ main .menu .desserts-cards .cards .card .card-absolute {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 0;
-  transition: transform 2s;
+  transition: 1s;
 }
 main .menu .desserts-cards .cards .card .card-absolute .fa-circle-check {
   color: white;

@@ -102,9 +102,10 @@ main{
             border: none;
             color: $seventh-color;
             background: linear-gradient(#9356DC,#FF79DA);
-            transition: transform 400ms;
+            transition: 2s;
             &:hover{
                 transform: scale(1.15);
+                box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba($color: #67007e, $alpha: 0.7);
             }
             @media (min-width: 1024px) {
                 margin-top: 0;
@@ -277,6 +278,35 @@ main{
                         }
                         .card-content{
                             margin-left: 10px;
+                            margin-right: 10px; ;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            form{
+                                position: relative;
+                                width: 10%;
+                                .liked{
+                                    opacity: 0;
+                                    position: absolute;
+                                    z-index: 2;
+                                    left: 0;
+                                }
+                                input{
+                                    position: absolute;
+                                    z-index: 3;
+                                    width: 100%;
+                                    height: 100%;
+                                    opacity: 0;
+                                }
+                                & input:checked + .default + .liked{
+                                    transition: 3s;
+                                    opacity: 1;
+                                }
+                                & input:not(:checked) + .default +.liked{
+                                    transition: 3s;
+                                    opacity: 0;
+                                }
+                            }
                         }
                     }
                 }
