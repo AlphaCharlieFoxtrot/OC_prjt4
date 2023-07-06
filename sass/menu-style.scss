@@ -78,11 +78,19 @@ main{
             }
             form{
                 position: relative;
+                width: 10%;
+                .default{
+                    i{
+                        font-size: 1.4em;
+                    }
+                }
                 .liked{
                     opacity: 0;
                     position: absolute;
                     z-index: 2;
-                    left: 0;
+                    left: 1px;
+                    top: 1px;
+                    width: 22px;
                 }
                 input{
                     position: absolute;
@@ -91,15 +99,17 @@ main{
                     height: 100%;
                     opacity: 0;
                 }
-                input:checked + .default + .liked{
+                & input:checked + .default + .liked{
                     transition: 3s;
                     opacity: 1;
                 }
-                input:not(:checked) + .default +.liked{
+                & input:checked + .default{
+                    opacity: 0;
+                }
+                & input:not(:checked) + .default +.liked{
                     transition: 3s;
                     opacity: 0;
                 }
-
             }
         }
         .entrees-cards{

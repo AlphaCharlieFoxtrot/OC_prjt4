@@ -299,11 +299,16 @@ main .restaurants-cards .cards .cards_ a article .card-content form {
   position: relative;
   width: 10%;
 }
+main .restaurants-cards .cards .cards_ a article .card-content form .default i {
+  font-size: 1.4em;
+}
 main .restaurants-cards .cards .cards_ a article .card-content form .liked {
   opacity: 0;
   position: absolute;
   z-index: 2;
-  left: 0;
+  left: 1px;
+  top: 1px;
+  width: 22px;
 }
 main .restaurants-cards .cards .cards_ a article .card-content form input {
   position: absolute;
@@ -315,6 +320,9 @@ main .restaurants-cards .cards .cards_ a article .card-content form input {
 main .restaurants-cards .cards .cards_ a article .card-content form input:checked + .default + .liked {
   transition: 3s;
   opacity: 1;
+}
+main .restaurants-cards .cards .cards_ a article .card-content form input:checked + .default {
+  opacity: 0;
 }
 main .restaurants-cards .cards .cards_ a article .card-content form input:not(:checked) + .default + .liked {
   transition: 3s;
