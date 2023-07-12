@@ -175,12 +175,18 @@ main{
                     border-radius: 15.04px;
                     height: 69px;
                     position: relative;
+                    overflow: none;
                     &:hover .card-content{
-                        width: 90%;
+                        width: 80%;
                     }
                     &:hover .card-absolute{
-                        opacity: 1;
-                        transform: translateX(-60px);
+                        width:20%;
+                    }
+                    &:not(:hover) .card-content{
+                        width: 100%;
+                    }
+                    &:not(:hover) .card-absolute{
+                        width:0;
                     }
                     .card-content{
                         display: flex;
@@ -212,18 +218,17 @@ main{
                         }
                     }
                     .card-absolute{
-                        position: absolute;
                         background-color: #99E2D0;
                         height: 69px;
                         width: 59px;
+                        width: 0;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        right: -60px;
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
-                        opacity: 0;
-                        transition: 1s;
+                        overflow: hidden;
+                        transition: 2s;
                         .fa-circle-check{
                             color: white;
                         } 
@@ -239,7 +244,7 @@ main{
             color: $seventh-color;
             background: linear-gradient(#9356DC,#FF79DA);
             margin-bottom: 40px;
-            transition: 2s;
+            transition: 0.5s;
             &:hover{
                 transform: scale(1.15);
                 box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba($color: #67007e, $alpha: 0.7);

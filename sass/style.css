@@ -157,7 +157,7 @@ main .section-intro .cta {
   border: none;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
-  transition: 2s;
+  transition: 0.5s;
 }
 main .section-intro .cta:hover {
   transform: scale(1.15);
