@@ -126,6 +126,8 @@ main{
             @media (min-width: 1024px) {
                 width: 60%;
             }
+        }
+        .section-plats{
             h2{
                 width: 95%;
                 text-align: left;
@@ -214,80 +216,6 @@ main{
             @media (min-width: 1024px) {
                 width: 60%;
             }
-            h2{
-                width: 95%;
-                text-align: left;
-                span{
-                    border-bottom: 3px solid $second-color;
-                }
-            }
-            .cards{
-                display: flex;
-                flex-direction: column;
-                width: 95%;
-                gap: 12px;
-                .card{
-                    background-color: $seventh-color;
-                    display: flex;
-                    align-items: end;
-                    border-radius: 15.04px;
-                    height: 69px;
-                    position: relative;
-                    &:hover .card-content{
-                        width: 90%;
-                    }
-                    &:hover .card-absolute{
-                        opacity: 1;
-                        transform: translateX(-60px);
-                    }
-                    .card-content{
-                        display: flex;
-                        justify-content: center;
-                        align-items: end;
-                        width: 100%;
-                        transition: 2s;
-                        .price{
-                            margin-bottom: 13.5px;
-                            display: flex;
-                            justify-content: center;
-                            width: 10%;
-                        }
-                        .plate{
-                            width: 85%;
-                            height: 69px;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            gap: 5px;
-                            h4{
-                                padding: 0;
-                                size: 15.04px;
-                            }
-                            p{
-                                padding: 0;
-                                size: 15.04px;
-                            }
-                        }
-                    }
-                    .card-absolute{
-                        position: absolute;
-                        background-color: #99E2D0;
-                        height: 69px;
-                        width: 59px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        right: -60px;
-                        border-top-right-radius: 15px;
-                        border-bottom-right-radius: 15px;
-                        opacity: 0;
-                        transition: 1s;
-                        .fa-circle-check{
-                            color: white;
-                        } 
-                    }
-                }
-            }
         }
         .desserts-cards{
             display: flex;
@@ -301,80 +229,6 @@ main{
             animation-delay: 5s;
             @media (min-width: 1024px) {
                 width: 60%;
-            }
-            h2{
-                width: 95%;
-                text-align: left;
-                span{
-                    border-bottom: 3px solid $second-color;
-                }
-            }
-            .cards{
-                display: flex;
-                flex-direction: column;
-                width: 95%;
-                gap: 12px;
-                .card{
-                    background-color: $seventh-color;
-                    display: flex;
-                    align-items: end;
-                    border-radius: 15.04px;
-                    height: 69px;
-                    position: relative;
-                    &:hover .card-content{
-                        width: 90%;
-                    }
-                    &:hover .card-absolute{
-                        opacity: 1;
-                        transform: translateX(-60px);
-                    }
-                    .card-content{
-                        display: flex;
-                        justify-content: center;
-                        align-items: end;
-                        width: 100%;
-                        transition: 2s;
-                        .price{
-                            margin-bottom: 13.5px;
-                            display: flex;
-                            justify-content: center;
-                            width: 10%;
-                        }
-                        .plate{
-                            width: 85%;
-                            height: 69px;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            gap: 5px;
-                            h4{
-                                padding: 0;
-                                size: 15.04px;
-                            }
-                            p{
-                                padding: 0;
-                                size: 15.04px;
-                            }
-                        }
-                    }
-                    .card-absolute{
-                        position: absolute;
-                        background-color: #99E2D0;
-                        height: 69px;
-                        width: 59px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        right: -60px;
-                        border-top-right-radius: 15px;
-                        border-bottom-right-radius: 15px;
-                        opacity: 0;
-                        transition: 1s;
-                        .fa-circle-check{
-                            color: white;
-                        } 
-                    }
-                }
             }
         }
         .cta{

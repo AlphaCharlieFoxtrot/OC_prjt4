@@ -123,20 +123,20 @@ main .menu .entrees-cards {
     width: 60%;
   }
 }
-main .menu .entrees-cards h2 {
+main .menu .section-plats h2 {
   width: 95%;
   text-align: left;
 }
-main .menu .entrees-cards h2 span {
+main .menu .section-plats h2 span {
   border-bottom: 3px solid #99e2d0;
 }
-main .menu .entrees-cards .cards {
+main .menu .section-plats .cards {
   display: flex;
   flex-direction: column;
   width: 95%;
   gap: 12px;
 }
-main .menu .entrees-cards .cards .card {
+main .menu .section-plats .cards .card {
   background-color: white;
   display: flex;
   align-items: end;
@@ -144,27 +144,27 @@ main .menu .entrees-cards .cards .card {
   height: 69px;
   position: relative;
 }
-main .menu .entrees-cards .cards .card:hover .card-content {
+main .menu .section-plats .cards .card:hover .card-content {
   width: 90%;
 }
-main .menu .entrees-cards .cards .card:hover .card-absolute {
+main .menu .section-plats .cards .card:hover .card-absolute {
   opacity: 1;
   transform: translateX(-60px);
 }
-main .menu .entrees-cards .cards .card .card-content {
+main .menu .section-plats .cards .card .card-content {
   display: flex;
   justify-content: center;
   align-items: end;
   width: 100%;
   transition: 2s;
 }
-main .menu .entrees-cards .cards .card .card-content .price {
+main .menu .section-plats .cards .card .card-content .price {
   margin-bottom: 13.5px;
   display: flex;
   justify-content: center;
   width: 10%;
 }
-main .menu .entrees-cards .cards .card .card-content .plate {
+main .menu .section-plats .cards .card .card-content .plate {
   width: 85%;
   height: 69px;
   display: flex;
@@ -172,15 +172,15 @@ main .menu .entrees-cards .cards .card .card-content .plate {
   justify-content: center;
   gap: 5px;
 }
-main .menu .entrees-cards .cards .card .card-content .plate h4 {
+main .menu .section-plats .cards .card .card-content .plate h4 {
   padding: 0;
   size: 15.04px;
 }
-main .menu .entrees-cards .cards .card .card-content .plate p {
+main .menu .section-plats .cards .card .card-content .plate p {
   padding: 0;
   size: 15.04px;
 }
-main .menu .entrees-cards .cards .card .card-absolute {
+main .menu .section-plats .cards .card .card-absolute {
   position: absolute;
   background-color: #99E2D0;
   height: 69px;
@@ -194,7 +194,7 @@ main .menu .entrees-cards .cards .card .card-absolute {
   opacity: 0;
   transition: 1s;
 }
-main .menu .entrees-cards .cards .card .card-absolute .fa-circle-check {
+main .menu .section-plats .cards .card .card-absolute .fa-circle-check {
   color: white;
 }
 main .menu .plats-cards {
@@ -213,80 +213,6 @@ main .menu .plats-cards {
     width: 60%;
   }
 }
-main .menu .plats-cards h2 {
-  width: 95%;
-  text-align: left;
-}
-main .menu .plats-cards h2 span {
-  border-bottom: 3px solid #99e2d0;
-}
-main .menu .plats-cards .cards {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  gap: 12px;
-}
-main .menu .plats-cards .cards .card {
-  background-color: white;
-  display: flex;
-  align-items: end;
-  border-radius: 15.04px;
-  height: 69px;
-  position: relative;
-}
-main .menu .plats-cards .cards .card:hover .card-content {
-  width: 90%;
-}
-main .menu .plats-cards .cards .card:hover .card-absolute {
-  opacity: 1;
-  transform: translateX(-60px);
-}
-main .menu .plats-cards .cards .card .card-content {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  width: 100%;
-  transition: 2s;
-}
-main .menu .plats-cards .cards .card .card-content .price {
-  margin-bottom: 13.5px;
-  display: flex;
-  justify-content: center;
-  width: 10%;
-}
-main .menu .plats-cards .cards .card .card-content .plate {
-  width: 85%;
-  height: 69px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-}
-main .menu .plats-cards .cards .card .card-content .plate h4 {
-  padding: 0;
-  size: 15.04px;
-}
-main .menu .plats-cards .cards .card .card-content .plate p {
-  padding: 0;
-  size: 15.04px;
-}
-main .menu .plats-cards .cards .card .card-absolute {
-  position: absolute;
-  background-color: #99E2D0;
-  height: 69px;
-  width: 59px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  right: -60px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  opacity: 0;
-  transition: 1s;
-}
-main .menu .plats-cards .cards .card .card-absolute .fa-circle-check {
-  color: white;
-}
 main .menu .desserts-cards {
   display: flex;
   flex-direction: column;
@@ -302,80 +228,6 @@ main .menu .desserts-cards {
   main .menu .desserts-cards {
     width: 60%;
   }
-}
-main .menu .desserts-cards h2 {
-  width: 95%;
-  text-align: left;
-}
-main .menu .desserts-cards h2 span {
-  border-bottom: 3px solid #99e2d0;
-}
-main .menu .desserts-cards .cards {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  gap: 12px;
-}
-main .menu .desserts-cards .cards .card {
-  background-color: white;
-  display: flex;
-  align-items: end;
-  border-radius: 15.04px;
-  height: 69px;
-  position: relative;
-}
-main .menu .desserts-cards .cards .card:hover .card-content {
-  width: 90%;
-}
-main .menu .desserts-cards .cards .card:hover .card-absolute {
-  opacity: 1;
-  transform: translateX(-60px);
-}
-main .menu .desserts-cards .cards .card .card-content {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  width: 100%;
-  transition: 2s;
-}
-main .menu .desserts-cards .cards .card .card-content .price {
-  margin-bottom: 13.5px;
-  display: flex;
-  justify-content: center;
-  width: 10%;
-}
-main .menu .desserts-cards .cards .card .card-content .plate {
-  width: 85%;
-  height: 69px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-}
-main .menu .desserts-cards .cards .card .card-content .plate h4 {
-  padding: 0;
-  size: 15.04px;
-}
-main .menu .desserts-cards .cards .card .card-content .plate p {
-  padding: 0;
-  size: 15.04px;
-}
-main .menu .desserts-cards .cards .card .card-absolute {
-  position: absolute;
-  background-color: #99E2D0;
-  height: 69px;
-  width: 59px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  right: -60px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  opacity: 0;
-  transition: 1s;
-}
-main .menu .desserts-cards .cards .card .card-absolute .fa-circle-check {
-  color: white;
 }
 main .menu .cta {
   width: 186px;
