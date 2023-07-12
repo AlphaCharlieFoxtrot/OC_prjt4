@@ -8,8 +8,51 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
+  position: relative;
+}
+body .loader {
+  background-color: #242424;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  animation: cesameOpenUp ease-in;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+body .loader .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.7);
+  border-top: 10px solid #fff;
+  animation: animate infinite linear;
+  animation-delay: 0s;
+  animation-duration: 3s;
 }
 
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes cesameOpenUp {
+  0% {
+    display: flex;
+  }
+  100% {
+    display: none;
+  }
+}
 header {
   display: flex;
   flex-direction: column;

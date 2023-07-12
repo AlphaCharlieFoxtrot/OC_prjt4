@@ -66,6 +66,7 @@ main .menu .menu-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40%;
   margin-left: 17px;
   margin-top: 32px;
   gap: 30px;
