@@ -127,6 +127,34 @@ main{
                 width: 60%;
             }
         }
+        .plats-cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+            gap: 12px;
+            animation: slideRight ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode:both;
+            animation-delay: 3s;
+            @media (min-width: 1024px) {
+                width: 60%;
+            }
+        }
+        .desserts-cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+            gap: 12px;
+            animation: slideRight ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode:both;
+            animation-delay: 5s;
+            @media (min-width: 1024px) {
+                width: 60%;
+            }
+        }
         .section-plats{
             h2{
                 width: 95%;
@@ -201,34 +229,6 @@ main{
                         } 
                     }
                 }
-            }
-        }
-        .plats-cards{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 95%;
-            gap: 12px;
-            animation: slideRight ease 3s;
-            animation-iteration-count: 1;
-            animation-fill-mode:both;
-            animation-delay: 3s;
-            @media (min-width: 1024px) {
-                width: 60%;
-            }
-        }
-        .desserts-cards{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 95%;
-            gap: 12px;
-            animation: slideRight ease 3s;
-            animation-iteration-count: 1;
-            animation-fill-mode:both;
-            animation-delay: 5s;
-            @media (min-width: 1024px) {
-                width: 60%;
             }
         }
         .cta{

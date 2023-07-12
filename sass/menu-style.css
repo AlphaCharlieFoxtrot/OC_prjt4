@@ -123,6 +123,38 @@ main .menu .entrees-cards {
     width: 60%;
   }
 }
+main .menu .plats-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  gap: 12px;
+  animation: slideRight ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+@media (min-width: 1024px) {
+  main .menu .plats-cards {
+    width: 60%;
+  }
+}
+main .menu .desserts-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  gap: 12px;
+  animation: slideRight ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 5s;
+}
+@media (min-width: 1024px) {
+  main .menu .desserts-cards {
+    width: 60%;
+  }
+}
 main .menu .section-plats h2 {
   width: 95%;
   text-align: left;
@@ -196,38 +228,6 @@ main .menu .section-plats .cards .card .card-absolute {
 }
 main .menu .section-plats .cards .card .card-absolute .fa-circle-check {
   color: white;
-}
-main .menu .plats-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 95%;
-  gap: 12px;
-  animation: slideRight ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-delay: 3s;
-}
-@media (min-width: 1024px) {
-  main .menu .plats-cards {
-    width: 60%;
-  }
-}
-main .menu .desserts-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 95%;
-  gap: 12px;
-  animation: slideRight ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-delay: 5s;
-}
-@media (min-width: 1024px) {
-  main .menu .desserts-cards {
-    width: 60%;
-  }
 }
 main .menu .cta {
   width: 186px;
