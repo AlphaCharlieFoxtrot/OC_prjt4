@@ -113,34 +113,8 @@ main{
                 }
             }
         }
-        .entrees-cards{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 95%;
-            gap: 12px;
-            animation: slideRight ease 3s;
-            animation-iteration-count: 1;
-            animation-fill-mode:both;
-            animation-delay: 1s;
-            @media (min-width: 1024px) {
-                width: 60%;
-            }
-        }
-        .plats-cards{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 95%;
-            gap: 12px;
-            animation: slideRight ease 3s;
-            animation-iteration-count: 1;
-            animation-fill-mode:both;
-            animation-delay: 3s;
-            @media (min-width: 1024px) {
-                width: 60%;
-            }
-        }
+        .entrees-cards,
+        .plats-cards,
         .desserts-cards{
             display: flex;
             flex-direction: column;
@@ -150,10 +124,18 @@ main{
             animation: slideRight ease 3s;
             animation-iteration-count: 1;
             animation-fill-mode:both;
-            animation-delay: 5s;
             @media (min-width: 1024px) {
                 width: 60%;
             }
+        }
+        .entrees-cards{
+            animation-delay: 1s;
+        }
+        .plats-cards{
+            animation-delay: 3s;
+        }
+        .desserts-cards{
+            animation-delay: 5s;
         }
         .section-plats{
             h2{
