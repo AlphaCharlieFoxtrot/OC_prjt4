@@ -165,6 +165,7 @@ main{
             background: linear-gradient(#9356DC,#FF79DA);
             transition: 0.5s;
             &:hover{
+                filter : brightness(1.05);
                 transform: scale(1.15);
                 box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba($color: #67007e, $alpha: 0.7);
             }

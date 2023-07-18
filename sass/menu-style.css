@@ -107,38 +107,8 @@ main .menu .menu-title form input:not(:checked) + .default + .liked {
   transition: 3s;
   opacity: 0;
 }
-main .menu .entrees-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 95%;
-  gap: 12px;
-  animation: slideRight ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-delay: 1s;
-}
-@media (min-width: 1024px) {
-  main .menu .entrees-cards {
-    width: 60%;
-  }
-}
-main .menu .plats-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 95%;
-  gap: 12px;
-  animation: slideRight ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-delay: 3s;
-}
-@media (min-width: 1024px) {
-  main .menu .plats-cards {
-    width: 60%;
-  }
-}
+main .menu .entrees-cards,
+main .menu .plats-cards,
 main .menu .desserts-cards {
   display: flex;
   flex-direction: column;
@@ -148,12 +118,22 @@ main .menu .desserts-cards {
   animation: slideRight ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
-  animation-delay: 5s;
 }
 @media (min-width: 1024px) {
+  main .menu .entrees-cards,
+  main .menu .plats-cards,
   main .menu .desserts-cards {
     width: 60%;
   }
+}
+main .menu .entrees-cards {
+  animation-delay: 1s;
+}
+main .menu .plats-cards {
+  animation-delay: 3s;
+}
+main .menu .desserts-cards {
+  animation-delay: 5s;
 }
 main .menu .section-plats h2 {
   width: 95%;
