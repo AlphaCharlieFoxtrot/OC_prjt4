@@ -155,7 +155,6 @@ main .menu .section-plats .cards .card {
   border-radius: 15.04px;
   height: 69px;
   position: relative;
-  overflow: none;
 }
 main .menu .section-plats .cards .card:hover .card-content {
   width: 80%;
