@@ -16,7 +16,7 @@ body .loader {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 3;
+  z-index: 99;
   top: 0;
   left: 0;
   animation: cesameOpenUp ease-out;
@@ -294,17 +294,29 @@ main .restaurants-cards .cards .cards_ {
     gap: 100px;
   }
 }
-main .restaurants-cards .cards .cards_ a {
+main .restaurants-cards .cards .cards_ .bx.bx1 form {
+  left: 480px;
+  bottom: 520px;
+}
+main .restaurants-cards .cards .cards_ .bx.bx2 form {
+  right: 220px;
+  bottom: 520px;
+}
+main .restaurants-cards .cards .cards_ .bx.bx3 form {
+  left: 480px;
+  bottom: 220px;
+}
+main .restaurants-cards .cards .cards_ .bx a {
   text-decoration: none;
   color: #242424;
 }
-main .restaurants-cards .cards .cards_ a .alafrançaise .card-imgEtNew p {
+main .restaurants-cards .cards .cards_ .bx a .alafrançaise .card-imgEtNew p {
   display: none;
 }
-main .restaurants-cards .cards .cards_ a .ledélicedessens .card-imgEtNew p {
+main .restaurants-cards .cards .cards_ .bx a .ledélicedessens .card-imgEtNew p {
   display: none;
 }
-main .restaurants-cards .cards .cards_ a article {
+main .restaurants-cards .cards .cards_ .bx a article {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -313,12 +325,12 @@ main .restaurants-cards .cards .cards_ a article {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
 }
 @media (min-width: 1024px) {
-  main .restaurants-cards .cards .cards_ a article {
+  main .restaurants-cards .cards .cards_ .bx a article {
     min-width: 341px;
     width: 100%;
   }
 }
-main .restaurants-cards .cards .cards_ a article .card-imgEtNew {
+main .restaurants-cards .cards .cards_ .bx a article .card-imgEtNew {
   width: 100%;
   height: 60%;
   display: flex;
@@ -327,7 +339,7 @@ main .restaurants-cards .cards .cards_ a article .card-imgEtNew {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-main .restaurants-cards .cards .cards_ a article .card-imgEtNew img {
+main .restaurants-cards .cards .cards_ .bx a article .card-imgEtNew img {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -336,50 +348,51 @@ main .restaurants-cards .cards .cards_ a article .card-imgEtNew img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-main .restaurants-cards .cards .cards_ a article .card-imgEtNew p {
+main .restaurants-cards .cards .cards_ .bx a article .card-imgEtNew p {
   position: absolute;
   color: #008766;
   background-color: #99e2d0;
   padding: 6px;
   margin-right: 15px;
 }
-main .restaurants-cards .cards .cards_ a article .card-content {
+main .restaurants-cards .cards .cards_ .bx a article .card-content {
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main .restaurants-cards .cards .cards_ a article .card-content form {
-  position: relative;
-  width: 10%;
-}
-main .restaurants-cards .cards .cards_ a article .card-content form .default i {
-  font-size: 1.4em;
-}
-main .restaurants-cards .cards .cards_ a article .card-content form .liked {
-  opacity: 0;
+main .restaurants-cards .cards .cards_ .bx form {
   position: absolute;
+  bottom: 219px;
+  right: 220px;
+}
+main .restaurants-cards .cards .cards_ .bx form .default {
+  font-size: 22px;
+}
+main .restaurants-cards .cards .cards_ .bx form .liked {
+  position: absolute;
+  font-size: 23px;
   z-index: 2;
-  left: 1px;
-  top: 1px;
-  width: 22px;
+  bottom: 3px;
 }
-main .restaurants-cards .cards .cards_ a article .card-content form input {
+main .restaurants-cards .cards .cards_ .bx form .checkbox {
   position: absolute;
+  width: 102%;
+  height: 102%;
   z-index: 3;
-  width: 100%;
-  height: 100%;
+  bottom: -3px;
+  left: -4px;
   opacity: 0;
 }
-main .restaurants-cards .cards .cards_ a article .card-content form input:checked + .default + .liked {
+main .restaurants-cards .cards .cards_ .bx form input:checked + .default + .liked {
   transition: 3s;
   opacity: 1;
 }
-main .restaurants-cards .cards .cards_ a article .card-content form input:checked + .default {
+main .restaurants-cards .cards .cards_ .bx form input:checked + .default {
   opacity: 0;
 }
-main .restaurants-cards .cards .cards_ a article .card-content form input:not(:checked) + .default + .liked {
+main .restaurants-cards .cards .cards_ .bx form input:not(:checked) + .default + .liked {
   transition: 3s;
   opacity: 0;
 }
